@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# Build
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Database
+*.db
+*.mdf
+*.ldf
+
+# NuGet
+**/packages/*
+
+appsettings.Development.json
