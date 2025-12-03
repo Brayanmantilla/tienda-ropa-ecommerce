@@ -6,6 +6,7 @@ namespace TiendaRopa.API.Models
     {
         [Key]
         public int OrderItemId { get; set; }
+
         public int OrderId { get; set; }
         public int ProductId { get; set; }
         public int VariantId { get; set; }
@@ -16,6 +17,6 @@ namespace TiendaRopa.API.Models
         // Relaciones
         public Order Order { get; set; } = null!;
         public Product Product { get; set; } = null!;
-        public ProductVariant Variant { get; set; } = null!;
+        public ProductVariant ProductVariant { get; set; } = null!;  // ← CAMBIAR AQUÍ
     }
 }

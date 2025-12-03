@@ -110,7 +110,7 @@ namespace TiendaRopa.API.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<OrderItem>()
-                .HasOne(oi => oi.Variant)
+                .HasOne(oi => oi.ProductVariant)
                 .WithMany(v => v.OrderItems)
                 .HasForeignKey(oi => oi.VariantId)
                 .OnDelete(DeleteBehavior.Restrict);
@@ -122,7 +122,7 @@ namespace TiendaRopa.API.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<CartItem>()
-                .HasOne(ci => ci.Variant)
+                .HasOne(ci => ci.ProductVariant)
                 .WithMany(v => v.CartItems)
                 .HasForeignKey(ci => ci.VariantId)
                 .OnDelete(DeleteBehavior.Restrict);
